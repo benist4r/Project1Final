@@ -1,0 +1,83 @@
+.header1{
+    background-color: orange;
+     height: 20vh;
+     width: 97vw;
+     display: flex;
+     justify-content:space-between;
+   }
+
+   .main1{
+    background-color:orangered;
+     height: 65vh;
+     width: 97vw;
+     display: flex;
+     justify-content:space-between;
+   }
+
+   .footer1{
+    background-color:lightcoral;
+    height: 10vh;
+    width: 97vw;
+    display: flex;
+    justify-content:flex-end;
+   }
+
+   .logo{
+    margin-left: 50px;
+  }
+   .nav{
+    margin-top: 30px;
+    margin-right: 50px;
+   }
+
+   a{
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+    font-family: Arial;
+  }
+  .container {
+    display: grid;
+    height: 66vh;
+    width: 100%;
+    grid-gap: 0.5em;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 0.0fr 5fr 4fr 0.3fr;
+    grid-template-areas: 'n n n n'
+                         's m m m'
+                         's c1 c2 c3'
+}
+  #main {
+    background-color: rgb(221, 91, 91);
+    grid-area: m;
+    border-radius: 0.8em;
+    text-align: center;
+}
+
+#sidebar {
+    background-color:lightcoral;
+    grid-area: s;
+    border-radius: 0.8em;
+    text-align: center;
+}
+
+#content1 {
+    background-color: rgb(232, 160, 26);
+    grid-area: c1;
+    border-radius: 0.8em;
+    text-align: center;
+}
+
+#content2 {
+    background-color:darksalmon;
+    grid-area: c2;
+    border-radius: 0.8em;
+    text-align: center;
+}
+
+#content3 {
+    background-color:lightcoral;
+    grid-area: c3;
+    border-radius: 0.8em;
+    text-align: center;
+}
